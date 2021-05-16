@@ -1,0 +1,125 @@
+.searchSection{
+    background-color: blanchedalmond;
+    width: 1170px;
+    height: 235px;
+    margin: 0px auto;
+    /*background-image: url(https://imgzj.jobscdn.com/postulantes-assets/skins/zonajobs/postulantes-desktop/img/zj_portada_site.jpg);*/
+}
+
+.searchBarContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.searchBar{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 0px 15px;
+    margin: auto 0px;
+}
+
+.searchInput{
+    background-color: transparent;
+    border: 0px;
+    min-width: 205px;
+    width: 100%;
+    height: 32px;
+    margin-right: 2px;
+    padding: 0px 8px;
+}
+
+.searchBarSeparator{
+    color: #aeadae;
+    font-size: 30px;
+    font-weight: 900;
+    position: relative;
+    bottom: 3px;
+}
+
+.locationSearchBar{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+.locationBarLabel{
+    font-family: Montserrat,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #aeadae;
+    flex-shrink: 0;
+}
+
+.locationInput{
+    background-color: transparent;
+    border: 0px;
+    height: 32px;
+    padding: 0px 8px;
+    margin-right: 2px;
+}
+
+.dropboxButton{
+    background-color: salmon;
+    height: 32px;
+    width: 32px;
+    flex-shrink: 0;
+}
+
+.searchButton{
+    height: 32px;
+    width: 32px;
+    flex-shrink: 0;
+    padding: 0px;
+}
+
+
+@media (max-width: 1200px) {
+    .searchSection{
+        width: 85%;
+    }
+}
+
+@media (max-width: 652px){
+    .searchInput{
+        max-width: 205px;
+    }
+    .locationInput{
+        width: 100%;
+    }
+}
+
+@media (max-width:580px){
+    .searchBar{
+        flex-direction: column;
+        background-color: transparent;
+        height: unset;
+    }
+    .searchInput{
+        height: 40px;
+        width: 95%;
+        max-width: unset;
+        min-width: unset;
+        margin-bottom: 15px;
+        border-radius: 20px;
+        background-color: white;
+    }
+    .searchBarSeparator{
+        display: none;
+    }
+    .locationSearchBar{
+        height: 40px;
+        width: 85%;
+        border-radius: 20px;
+        margin-bottom: 15px;
+        padding: 0px 8px;
+        background-color: white;
+    }
+}
