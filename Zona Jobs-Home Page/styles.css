@@ -109,9 +109,27 @@ input:focus, textarea:focus, select:focus{
     .searchBar{
         flex-direction: column;
         background-color: transparent;
+        height: unset;
+    }
+    .searchInput{
+        height: 40px;
+        width: 95%;
+        max-width: unset;
+        min-width: unset;
+        margin-bottom: 15px;
+        border-radius: 20px;
+        background-color: white;
     }
     .searchBarSeparator{
         display: none;
+    }
+    .locationSearchBar{
+        height: 40px;
+        width: 85%;
+        border-radius: 20px;
+        margin-bottom: 15px;
+        padding: 0px 8px;
+        background-color: white;
     }
 }
 
