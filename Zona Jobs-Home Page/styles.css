@@ -6,3 +6,139 @@ body{
 input:focus, textarea:focus, select:focus{
     outline: none;
 }
+
+a {
+    color: #585992;
+    text-decoration: none;
+}
+
+:root{
+    --jobSectionNavBarWidth:235px;
+    --jobSectionAdsMarginLeft:15px;
+    --jobSectionAdsWidth: calc(100% - calc(var(--jobSectionNavBarWidth) + var(--jobSectionAdsMarginLeft)));
+}
+
+.jobSection{
+    width: 1170px;
+    margin:0px auto;
+}
+
+.jobSectionHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: aqua;
+    padding: 15px 15px;
+    margin-bottom: 15px;
+}
+
+.countryLabel{
+}
+
+.allCountryAds{
+    float: right;
+    margin-left: auto;
+}
+
+.jobSectionDropDownNav{
+    height: 100px;
+    margin-bottom: 15px;
+    border: 1px solid greenyellow;
+    display: none;
+}
+
+.jobSectionNav{
+    float:left;
+    width: var(--jobSectionNavBarWidth);
+    max-width: var(--jobSectionNavBarWidth);
+    background-color: bisque;
+}
+
+.labelFilterOption{
+    font-weight: 550;
+    font-family: Montserrat,Arial,sans-serif;
+    font-size: 14px;
+}
+.filterOptionsContainer{
+    padding: 0 15px;
+    padding-top: 10px;
+    border-top: 2px solid #dbdbdb;
+}
+
+.filterOptionsContainer:first-child{
+    border-top: 0;
+}
+
+.ulFilterOptions{
+    list-style-type: none;
+    padding: 0px;
+}
+
+.filterItem{
+    display: inline-block;
+    overflow: hidden;
+}
+
+.jobSectionAds{
+    float: right;
+    width: var(--jobSectionAdsWidth);
+    height: 800px;
+    margin-left: var(--jobSectionAdsMarginLeft);
+    background-color: chocolate;
+}
+
+.featuredJobsTitle{
+    font-family: Montserrat,Arial,sans-serif;
+    font-size: 26px;
+    margin: 15px 0px;
+}
+
+.jobAds{
+    display: grid;
+    grid-template-columns: calc(50% - 5px) calc(50% - 5px);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.jobAd{
+    height: 200px;
+    width: 100%;
+    background-color: darkred;
+}
+
+@media (max-width: 1200px) {
+    .jobSection{
+        width: 85%;
+    }
+}
+
+@media (max-width: 1100px){
+    .jobAds{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
+
+@media (max-width: 700px){
+    .jobAds{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .jobSectionNav{
+        display: none;
+    }
+    .jobSectionAds{
+        width: 100%;
+        margin-left: unset;
+    }
+    .jobSectionDropDownNav{
+        display: block;
+    }
+}
+
+@media (max-width: 615px) {
+    .allCountryAds{
+        width: 150px;
+        text-align: center;
+    }
+}
