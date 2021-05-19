@@ -1,10 +1,12 @@
+.searchSectionContainer{
+    background-image: url(https://imgzj.jobscdn.com/postulantes-assets/skins/zonajobs/postulantes-desktop/img/zj_portada_site.jpg);
+}
+
 .searchSection{
-    background-color: blanchedalmond;
     width: 1170px;
     height: 235px;
     margin: 0px auto;
     margin-bottom: 15px;
-    /*background-image: url(https://imgzj.jobscdn.com/postulantes-assets/skins/zonajobs/postulantes-desktop/img/zj_portada_site.jpg);*/
 }
 
 .searchBarContainer{

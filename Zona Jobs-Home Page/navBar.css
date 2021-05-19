@@ -1,6 +1,9 @@
 header{
+    background-color: #fff;
+}
+
+.navContainer{
     height: 58px;
-    background-color: aqua;
     width: 1170px;
     margin: 0px auto;
 }
@@ -13,10 +16,13 @@ nav{
     height: 100%;
 }
 
-.logo{
-    width: 76px;
+.logoContainer{
     margin-left: 15px;
     flex-shrink: 0;
+}
+
+.logoImg{
+    width: 90px;
 }
 
 .navOptionsNButtonContainer{
@@ -60,7 +66,6 @@ nav{
     padding: 10px 20px;
     color: #585992;
     border: 1px solid #585992;
-    background-color: #fff;
 }
 
 .dropbox{
@@ -73,12 +78,12 @@ nav{
 }
 
 @media (max-width: 1200px) {
-    header{
+    .navContainer{
         width: 85%;
     }
 }
 
-@media (max-width: 1070px) {
+@media (max-width: 1115px) {
     .navOptions{
         display:none;
     }
