@@ -1,129 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="navBar.css">
-    <link rel="stylesheet" href="searchBarSection.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="navBar.css" />
+    <link rel="stylesheet" href="searchBarSection.css" />
+    <link rel="stylesheet" href="jobSection.css" />
     <title>Zona Jobs</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="navContainer">
-            <nav>
-                <a class="logoContainer" href="/"><img class="logoImg" src="https://imgzj.jobscdn.com/postulantes-assets/skins/zonajobs/commons/img/logo-zonajobs.svg"/></a>
-                <div class="navOptionsNButtonContainer">
-                    <div class="navOptions">
-                        <a class="optionButton">PUESTOS EJECUTIVOS</a>
-                        <a class="optionButton">BLOG DE NOTICIAS</a>
-                        <a class="optionButton">SOY EMPRESA</a>
-                    </div>
-                    <div class="navSeparator"></div>
-                    <div class="navButtons">
-                        <a class="navButton">PUBLICAR GRATIS</a>
-                        <a class="navButton">INGRESAR</a>
-                    </div>
-                </div>
-                <div class="navSeparator2"></div>
-                <div class="dropbox">
-                </div>
-            </nav>
-        </div>
+      <div class="navContainer">
+        <nav>
+          <a class="logoContainer" href="/"
+            ><img
+              class="logoImg"
+              src="https://imgzj.jobscdn.com/postulantes-assets/skins/zonajobs/commons/img/logo-zonajobs.svg"
+          /></a>
+          <div class="navOptionsNButtonContainer">
+            <div class="navOptions">
+              <a class="optionButton">PUESTOS EJECUTIVOS</a>
+              <a class="optionButton">BLOG DE NOTICIAS</a>
+              <a class="optionButton">SOY EMPRESA</a>
+            </div>
+            <div class="navSeparator"></div>
+            <div class="navButtons">
+              <a class="navButton">PUBLICAR GRATIS</a>
+              <a class="navButton">INGRESAR</a>
+            </div>
+          </div>
+          <div class="navSeparator2"></div>
+          <div class="dropbox"></div>
+        </nav>
+      </div>
     </header>
     <div class="searchSectionContainer">
-        <div class="searchSection">
-            <div class="searchBarContainer">
-                <div class="searchBar">
-                    <input class="searchInput" placeholder="Puesto, Empresa, o Palabra Clave" />
+      <div class="searchSection">
+        <div class="searchBarContainer">
+          <div class="searchBar">
+            <input
+              class="searchInput"
+              placeholder="Puesto, Empresa, o Palabra Clave"
+            />
 
-                    <div class="searchBarSeparator">|</div>
-                    <div class="locationSearchBar">
-                        <label class="locationBarLabel">
-                            En:
-                        </label>
-                        <input class="locationInput" placeholder="Lugar de Trabajo" />
-                        <div class="dropboxButton">˅</div>
-                    </div>
-                    <button class="searchButton">
-                    </button>
-                </div>
+            <div class="searchBarSeparator">|</div>
+            <div class="locationSearchBar">
+              <label class="locationBarLabel"> En: </label>
+              <input class="locationInput" placeholder="Lugar de Trabajo" />
+              <div class="dropboxButton">˅</div>
             </div>
+            <button class="searchButton"></button>
+          </div>
         </div>
+      </div>
     </div>
     <div class="jobSection">
-        <div class="jobSectionHeader">
-            <label class="countryLabel">Argentina</label>
-            <a class="allCountryAds">VER AVISOS DE TODO ARGENTINA</a>
+      <div class="jobSectionHeader">
+        <label class="countryLabel">Argentina</label>
+        <a class="allCountryAds">VER AVISOS DE TODO ARGENTINA</a>
+      </div>
+      <div class="jobSectionDropDownNav"></div>
+      <div class="jobSectionNav">
+        <div class="filterOptionsContainer">
+          <label class="labelFilterOption">ÁREA</label>
+          <ul class="ulFilterOptions">
+            <li><a class="filterItem" href="/">Administración</a></li>
+            <li><a class="filterItem" href="/">Call center</a></li>
+            <li><a class="filterItem" href="/">Comercio exterior</a></li>
+            <li><a class="filterItem" href="/">Comunicación</a></li>
+            <li><a class="filterItem" href="/">Construcción</a></li>
+            <li><a class="filterItem" href="/">Diseño</a></li>
+            <li><a class="filterItem" href="/">Educación</a></li>
+            <li><a class="filterItem" href="/">Finanzas</a></li>
+            <li><a class="filterItem" href="/">Gastronomia</a></li>
+            <li><a class="filterItem" href="/">Gerencia</a></li>
+            <li><a class="filterItem" href="/">Ingeniería</a></li>
+          </ul>
         </div>
-        <div class="jobSectionDropDownNav">
-
+        <div class="filterOptionsContainer">
+          <label class="labelFilterOption">JÓVENES PROFESIONALES</label>
+          <ul class="ulFilterOptions">
+            <li><a class="filterItem" href="/">Jóvenes profesionales</a></li>
+            <li><a class="filterItem" href="/">Pasantías</a></li>
+          </ul>
         </div>
-        <div class="jobSectionNav">
-            <div class="filterOptionsContainer">
-                <label class="labelFilterOption">ÁREA</label>
-                <ul class="ulFilterOptions">
-                    <li><a class="filterItem" href="/">Administración</a></li>
-                    <li><a class="filterItem" href="/">Call center</a></li>
-                    <li><a class="filterItem" href="/">Comercio exterior</a></li>
-                    <li><a class="filterItem" href="/">Comunicación</a></li>
-                    <li><a class="filterItem" href="/">Construcción</a></li>
-                    <li><a class="filterItem" href="/">Diseño</a></li>
-                    <li><a class="filterItem" href="/">Educación</a></li>
-                    <li><a class="filterItem" href="/">Finanzas</a></li>
-                    <li><a class="filterItem" href="/">Gastronomia</a></li>
-                    <li><a class="filterItem" href="/">Gerencia</a></li>
-                    <li><a class="filterItem" href="/">Ingeniería</a></li>
-                </ul>
-            </div>
-            <div class="filterOptionsContainer">
-                <label class="labelFilterOption">JÓVENES PROFESIONALES</label>
-                <ul class="ulFilterOptions">
-                    <li><a class="filterItem" href="/">Jóvenes profesionales</a></li>
-                    <li><a class="filterItem" href="/">Pasantías</a></li>
-                </ul>
-            </div>
-            <div class="filterOptionsContainer">
-                <label class="labelFilterOption">MODALIDAD DE TRABAJO</label>
-                <ul class="ulFilterOptions">
-                    <li><a class="filterItem" href="/">Desde casa</a></li>
-                    <li><a class="filterItem" href="/">Presencial y desde casa</a></li>
-                    <li><a class="filterItem" href="/">Presencial</a></li>
-                    <li><a class="filterItem" href="/">Desde cualquier lugar del mundo</a></li>
-                </ul>
-            </div>
+        <div class="filterOptionsContainer">
+          <label class="labelFilterOption">MODALIDAD DE TRABAJO</label>
+          <ul class="ulFilterOptions">
+            <li><a class="filterItem" href="/">Desde casa</a></li>
+            <li><a class="filterItem" href="/">Presencial y desde casa</a></li>
+            <li><a class="filterItem" href="/">Presencial</a></li>
+            <li>
+              <a class="filterItem" href="/">Desde cualquier lugar del mundo</a>
+            </li>
+          </ul>
         </div>
-        <div clasS="jobSectionAds">
-            <p class="featuredJobsTitle">Empleos destacados en <strong>Argentina</strong></p>
-            <div class="jobAds">
-                <div class="jobAd">
-                    <p class="pPublishedAgo">PUBLICADO EL 12 DE MAYO</p>
-                    <div class="jobDescription-companyLogo-container">
-                        <div class="jobDescriptionContainer">
-                            <img class="jobDescriptionLogoImage"
-                                src="https://imgzj.jobscdn.com/portal/img/empresas/1/static/logoMainPic_243558_bum_vc7d6ba60.jpg" />
-                            <p class="jobDescription1" style="font-size: 14px;">JEFE DE EQUIPO COMERCIAL-ALARMAS</p>
-                            <p class="jobDescription1" style="font-size: 13px; font-weight: 600;"><a href="/">Prosegur
-                                    SA</a></p>
-                            <p class="jobDescriptionLocation">Mendoza, Mendoza</p>
-                            <p class="jobDescription2">Prosegur es un referente global del sector de la seguridad
-                                privada. A través de sus cinco líneas de negocio —Prosegur Seguridad, Prosegur Cash,
-                                Prosegur Alarmas, Cipher y Prosegur AVOS— proporciona a empresas, hogares y comercios,
-                                una seguridad de confianza basada en las soluciones más avanzadas del mercado. Con ...
-                            </p>
-                        </div>
-                    </div>
+      </div>
+      <div class="jobSectionAds">
+        <p class="featuredJobsTitle">
+          Empleos destacados en <strong>Argentina</strong>
+        </p>
+        <div class="jobAds">
+          <div class="jobAd">
+            <p class="pPublishedAgo">publicado el 12 de mayo</p>
+            <div class="jobDescription-companyLogo-container">
+              <div class="jobDescriptionContainer">
+                <img
+                  class="jobDescriptionLogoImage"
+                  src="https://imgzj.jobscdn.com/portal/img/empresas/1/static/logoMainPic_243558_bum_vc7d6ba60.jpg"
+                />
+                <p class="jobDescriptionTitleNCompany" style="font-size: 14px">
+                  JEFE DE EQUIPO COMERCIAL-ALARMAS
+                </p>
+                <p
+                  class="jobDescriptionTitleNCompany"
+                  style="font-size: 13px; font-weight: 600"
+                >
+                  <a href="/">Prosegur SA</a>
+                </p>
+                <div class="jobDescriptionLocation">
+                  <label>Mendoza</label>, <label>Mendoza</label>
                 </div>
-                <div class="jobAd"></div>
-                <div class="jobAd"></div>
-                <div class="jobAd"></div>
-                <div class="jobAd"></div>
+                <p class="jobDescription">
+                  Prosegur es un referente global del sector de la seguridad
+                  privada. A través de sus cinco líneas de negocio —Prosegur
+                  Seguridad, Prosegur Cash, Prosegur Alarmas, Cipher y Prosegur
+                  AVOS— proporciona a empresas, hogares y comercios, una
+                  seguridad de confianza basada en las soluciones más avanzadas
+                  del mercado. Con ...
+                </p>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
