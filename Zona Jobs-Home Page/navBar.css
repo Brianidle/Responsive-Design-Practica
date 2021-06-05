@@ -17,7 +17,6 @@ nav{
 }
 
 .logoContainer{
-    margin-left: 15px;
     flex-shrink: 0;
 }
 
@@ -41,9 +40,10 @@ nav{
 }
 
 .navButtons{
+    display: flex;
 }
 
-.optionButtons{
+.optionButton{
     margin-right: 15px;
     border-radius: 20px;
     padding: 10px 5px;
@@ -51,12 +51,16 @@ nav{
     background-color: #fff;
 }
 
+.optionButton:last-child{
+    margin-right: 0px;
+}
+
 .navSeparator{
-    width: 10px;
+    width: 20px;
 }
 
 .navSeparator2{
-    width: 5px;
+    width: 20px;
     display:none;
 }
 
@@ -66,6 +70,10 @@ nav{
     padding: 10px 20px;
     color: #585992;
     border: 1px solid #585992;
+}
+
+.navButton:last-child{
+    margin-right: 0px;
 }
 
 .dropbox{
