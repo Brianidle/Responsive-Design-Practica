@@ -85,9 +85,9 @@ nav{
     flex-shrink: 0;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
     .navContainer{
-        width: 85%;
+        width: 95%;
     }
 }
 

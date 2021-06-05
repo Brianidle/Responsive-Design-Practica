@@ -1,5 +1,6 @@
 .searchSectionContainer{
     background-image: url(https://imgzj.jobscdn.com/postulantes-assets/skins/zonajobs/postulantes-desktop/img/zj_portada_site.jpg);
+    background-size: cover;
 }
 
 .searchSection{
@@ -84,9 +85,9 @@
 }
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
     .searchSection{
-        width: 85%;
+        width: 95%;
     }
 }
 
@@ -107,7 +108,7 @@
     }
     .searchInput{
         height: 40px;
-        width: 95%;
+        width: 100%;
         max-width: unset;
         min-width: unset;
         margin-bottom: 15px;
@@ -119,7 +120,7 @@
     }
     .locationSearchBar{
         height: 40px;
-        width: 85%;
+        width: 100%;
         border-radius: 20px;
         margin-bottom: 15px;
         padding: 0px 8px;
