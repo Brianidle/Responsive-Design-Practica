@@ -35,8 +35,6 @@
     min-width: 205px;
     width: 100%;
     height: 32px;
-    margin-right: 2px;
-    padding: 0px 8px;
 }
 
 .searchBarSeparator{
@@ -51,7 +49,7 @@
     display: inline-flex;
     flex-direction: row;
     align-items: center;
-    margin: 0px 10px;
+    margin-left: 5px;
 }
 
 .locationBarLabel{
@@ -68,6 +66,7 @@
     height: 32px;
     padding: 0px 8px;
     margin-right: 2px;
+    min-width: 180px;
 }
 
 .dropboxButton{
@@ -75,6 +74,7 @@
     height: 32px;
     width: 32px;
     flex-shrink: 0;
+    margin-right: 10px;
 }
 
 .searchButton{
@@ -92,9 +92,6 @@
 }
 
 @media (max-width: 652px){
-    .searchInput{
-        max-width: 205px;
-    }
     .locationInput{
         width: 100%;
     }
@@ -105,6 +102,7 @@
         flex-direction: column;
         background-color: transparent;
         height: unset;
+        padding: 0px;
     }
     .searchInput{
         height: 40px;
@@ -114,6 +112,8 @@
         margin-bottom: 15px;
         border-radius: 20px;
         background-color: white;
+        padding: 0px;
+        text-indent: 15px;
     }
     .searchBarSeparator{
         display: none;
@@ -123,7 +123,18 @@
         width: 100%;
         border-radius: 20px;
         margin-bottom: 15px;
-        padding: 0px 8px;
+        padding: 0px;
         background-color: white;
+        margin-left: 0px;
+
+    }
+    .locationInput{
+        min-width: unset;
+    }
+    .locationBarLabel{
+        margin-left: 15px;
+    }
+    .searchButton{
+        margin-right: 15px;
     }
 }
