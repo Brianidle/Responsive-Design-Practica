@@ -46,8 +46,11 @@ nav {
   margin-right: 15px;
   border-radius: 20px;
   padding: 10px 5px;
-  border: 1px solid #585992;
   background-color: #fff;
+}
+
+.optionButton:hover {
+  background-color: #ada8a83a;
 }
 
 .optionButton:last-child {
@@ -63,12 +66,30 @@ nav {
   display: none;
 }
 
-.navButton {
+.navButtonPublishForFree {
   margin-right: 15px;
   border-radius: 20px;
   padding: 10px 20px;
   color: #585992;
   border: 1px solid #585992;
+}
+
+.navButtonPublishForFree:hover {
+  background-color: #585992;
+  color: white;
+}
+
+.navButtonLogIn {
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #fe633f;
+  border: 1px solid #fe633f;
+}
+
+.navButtonLogIn:hover {
+  background-color: #fe633f;
+  border-color: #fe633f;
+  color: white;
 }
 
 .navButton:last-child {
@@ -77,10 +98,53 @@ nav {
 
 .dropbox {
   display: none;
-  background-color: brown;
   height: 40px;
   width: 50px;
   flex-shrink: 0;
+  background-color: transparent;
+  border: unset;
+}
+
+.dropbox:hover {
+  cursor: pointer;
+}
+
+.dropdownOpenedIcon {
+  display: none;
+}
+
+.dropboxContentContainer {
+  position: absolute;
+  width: 150px;
+  background-color: white;
+  right: 0px;
+  top: 50px;
+  right: 35px;
+}
+
+.dropboxContentContainerOpened {
+  display: block;
+}
+
+.dropboxContentContainerClosed {
+  display: none;
+}
+
+.dropboxOptionButton {
+  border-radius: 20px;
+  padding: 10px 5px;
+  background-color: #fff;
+}
+
+.dropboxContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropboxContent > a {
+  margin-right: 0px;
+  border-radius: 0px;
+  border: none;
 }
 
 @media (max-width: 1250px) {
@@ -101,7 +165,7 @@ nav {
   }
 }
 
-@media (max-width: 525px) {
+@media (max-width: 545px) {
   .navButtons {
     display: none;
   }
