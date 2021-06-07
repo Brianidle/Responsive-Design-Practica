@@ -96,55 +96,18 @@ nav {
   margin-right: 0px;
 }
 
-.dropbox {
+.dropdownNavBar {
   display: none;
   height: 40px;
-  width: 50px;
+  width: 40px;
   flex-shrink: 0;
   background-color: transparent;
   border: unset;
+  padding: 0px;
 }
 
-.dropbox:hover {
+.dropdownNavBar:hover {
   cursor: pointer;
-}
-
-.dropdownOpenedIcon {
-  display: none;
-}
-
-.dropboxContentContainer {
-  position: absolute;
-  width: 150px;
-  background-color: white;
-  right: 0px;
-  top: 50px;
-  right: 35px;
-}
-
-.dropboxContentContainerOpened {
-  display: block;
-}
-
-.dropboxContentContainerClosed {
-  display: none;
-}
-
-.dropboxOptionButton {
-  border-radius: 20px;
-  padding: 10px 5px;
-  background-color: #fff;
-}
-
-.dropboxContent {
-  display: flex;
-  flex-direction: column;
-}
-
-.dropboxContent > a {
-  margin-right: 0px;
-  border-radius: 0px;
-  border: none;
 }
 
 @media (max-width: 1250px) {
@@ -157,7 +120,7 @@ nav {
   .navOptions {
     display: none;
   }
-  .dropbox {
+  .dropdownNavBar {
     display: block;
   }
   .navSeparator2 {

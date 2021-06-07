@@ -1,0 +1,32 @@
+.dropdownContentContainer {
+    position: absolute;
+    background-color: white;
+    right: 0px;
+    top: 50px;
+    right: 35px;
+  }
+  
+  .dropdownContentContainerOpened {
+    display: block;
+  }
+  
+  .dropdownContentContainerClosed {
+    display: none;
+  }
+  
+  .dropdownOptionButton {
+    border-radius: 20px;
+    padding: 10px 5px;
+    background-color: #fff;
+  }
+  
+  .dropdownContent {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dropdownContent > a {
+    margin-right: 0px;
+    border-radius: 0px;
+    border: none;
+  }

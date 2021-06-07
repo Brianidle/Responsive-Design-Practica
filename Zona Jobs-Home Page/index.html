@@ -8,18 +8,19 @@
     <link rel="stylesheet" href="navBar.css" />
     <link rel="stylesheet" href="searchBarSection.css" />
     <link rel="stylesheet" href="jobSection.css" />
+    <link rel="stylesheet" href="dropdown.css" />
     <title>Zona Jobs</title>
     <script type="text/javascript">
       var dropDownOpened = false;
       function dropDownOnClick() {
-        let dropdown = document.getElementById("dropboxContentContainer");
+        let dropdown = document.getElementById("dropdownContentContainer");
         if (dropDownOpened) {
           dropdown.className =
-            "dropboxContentContainer dropboxContentContainerClosed";
+            "dropdownContentContainer dropdownContentContainerClosed";
           dropDownOpened = false;
         } else {
           dropdown.className =
-            "dropboxContentContainer dropboxContentContainerOpened";
+            "dropdownContentContainer dropdownContentContainerOpened";
           dropDownOpened = true;
         }
       }
@@ -48,13 +49,13 @@
             </div>
           </div>
           <div class="navSeparator2"></div>
-          <button class="dropbox" onclick="dropDownOnClick()">
+          <button class="dropdownNavBar" onclick="dropDownOnClick()">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
               fill="#000000"
-              class="bi bi-list dropdownClosedIcon"
+              class="bi bi-list"
               viewBox="0 0 16 16"
             >
               <path
@@ -62,23 +63,11 @@
                 d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
               />
             </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="#58adf3"
-              class="bi bi-x dropdownOpenedIcon"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
-              />
-            </svg>
             <div
-              id="dropboxContentContainer"
-              class="dropboxContentContainer dropboxContentContainerClosed"
+              id="dropdownContentContainer"
+              class="dropdownContentContainer dropdownContentContainerClosed"
             >
-              <div class="dropboxContent">
+              <div class="dropdownContent">
                 <a class="optionButton">PUESTOS EJECUTIVOS</a>
                 <a class="optionButton">BLOG DE NOTICIAS</a>
                 <a class="optionButton">SOY EMPRESA</a>
