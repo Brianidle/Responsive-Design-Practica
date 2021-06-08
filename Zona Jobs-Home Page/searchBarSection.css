@@ -103,10 +103,17 @@
 }
 
 .searchButton {
+  background-color: #fe633f;
+  border: unset;
+  border-radius: 30px;
   height: 32px;
   width: 32px;
   flex-shrink: 0;
   padding: 0px;
+}
+
+.searchButton:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 1250px) {
