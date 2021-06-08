@@ -36,6 +36,7 @@ nav {
 }
 
 .navOptions {
+  display: block;
 }
 
 .navButtons {
@@ -108,6 +109,11 @@ nav {
 
 .dropdownNavBar:hover {
   cursor: pointer;
+}
+
+.dropdownNavBarContainer {
+  top: 50px;
+  right: 30px;
 }
 
 @media (max-width: 1250px) {

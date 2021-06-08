@@ -39,3 +39,7 @@ header {
 main {
   padding-top: 58px;
 }
+
+header {
+  z-index: 2;
+}

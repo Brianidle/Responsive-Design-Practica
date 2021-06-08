@@ -11,17 +11,35 @@
     <link rel="stylesheet" href="dropdown.css" />
     <title>Zona Jobs</title>
     <script type="text/javascript">
-      var dropDownOpened = false;
-      function dropDownOnClick() {
-        let dropdown = document.getElementById("dropdownContentContainer");
-        if (dropDownOpened) {
-          dropdown.className =
-            "dropdownContentContainer dropdownContentContainerClosed";
-          dropDownOpened = false;
+      var dropDownNavBarOpened = false;
+      var dropDownSearchSectionOpened = false;
+
+      function onClickDropDownNavBar() {
+        let dropdownNavBar = document.getElementById(
+          "dropdownNavBarContentContainer"
+        );
+        if (dropDownNavBarOpened) {
+          dropdownNavBar.className =
+            "dropdownNavBarContainer dropdownContentContainer dropdownContentContainerClosed";
+          dropDownNavBarOpened = false;
         } else {
-          dropdown.className =
-            "dropdownContentContainer dropdownContentContainerOpened";
-          dropDownOpened = true;
+          dropdownNavBar.className =
+            "dropdownNavBarContainer dropdownContentContainer dropdownContentContainerOpened";
+          dropDownNavBarOpened = true;
+        }
+      }
+      function onClickDropDownSearchSection() {
+        let dropdownSearchSection = document.getElementById(
+          "dropdownSearchSectionContentContainer"
+        );
+        if (dropDownSearchSectionOpened) {
+          dropdownSearchSection.className =
+            "dropdownSearchSectionContainer dropdownContentContainer dropdownContentContainerClosed";
+          dropDownSearchSectionOpened = false;
+        } else {
+          dropdownSearchSection.className =
+            "dropdownSearchSectionContainer dropdownContentContainer dropdownContentContainerOpened";
+          dropDownSearchSectionOpened = true;
         }
       }
     </script>
@@ -49,7 +67,7 @@
             </div>
           </div>
           <div class="navSeparator2"></div>
-          <button class="dropdownNavBar" onclick="dropDownOnClick()">
+          <button class="dropdownNavBar" onclick="onClickDropDownNavBar()">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -64,8 +82,12 @@
               />
             </svg>
             <div
-              id="dropdownContentContainer"
-              class="dropdownContentContainer dropdownContentContainerClosed"
+              id="dropdownNavBarContentContainer"
+              class="
+                dropdownNavBarContainer
+                dropdownContentContainer
+                dropdownContentContainerClosed
+              "
             >
               <div class="dropdownContent">
                 <a class="optionButton">PUESTOS EJECUTIVOS</a>
@@ -88,12 +110,62 @@
                 class="searchInput"
                 placeholder="Puesto, Empresa, o Palabra Clave"
               />
-
               <div class="searchBarSeparator">|</div>
               <div class="locationSearchBar">
                 <label class="locationBarLabel"> En: </label>
                 <input class="locationInput" placeholder="Lugar de Trabajo" />
-                <div class="dropboxButton">˅</div>
+                <button
+                  class="dropdownSearchSectionButton"
+                  onclick="onClickDropDownSearchSection()"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-caret-down-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+                    />
+                  </svg>
+                  <div
+                    id="dropdownSearchSectionContentContainer"
+                    class="
+                      dropdownSearchSectionContainer
+                      dropdownContentContainer
+                      dropdownContentContainerClosed
+                    "
+                  >
+                    <div class="dropdownContent">
+                      <a class="dropDownSearchSectionOption">Todo el país</a>
+                      <a class="dropDownSearchSectionOption">Otra ubicación</a>
+                      <a class="dropDownSearchSectionOption">Buenos Aires</a>
+                      <a class="dropDownSearchSectionOption">Capital Federal</a>
+                      <a class="dropDownSearchSectionOption">Catamarca</a>
+                      <a class="dropDownSearchSectionOption">Chaco</a>
+                      <a class="dropDownSearchSectionOption">Chubut</a>
+                      <a class="dropDownSearchSectionOption">Corrientes</a>
+                      <a class="dropDownSearchSectionOption">Córdoba</a>
+                      <a class="dropDownSearchSectionOption">Entre Ríos</a>
+                      <a class="dropDownSearchSectionOption">Formosa</a>
+                      <a class="dropDownSearchSectionOption">Jujuy</a>
+                      <a class="dropDownSearchSectionOption">La Pampa</a>
+                      <a class="dropDownSearchSectionOption">La Rioja</a>
+                      <a class="dropDownSearchSectionOption">Mendoza</a>
+                      <a class="dropDownSearchSectionOption">Misiones</a>
+                      <a class="dropDownSearchSectionOption">Neuquén</a>
+                      <a class="dropDownSearchSectionOption">Río Negro</a>
+                      <a class="dropDownSearchSectionOption">Salta</a>
+                      <a class="dropDownSearchSectionOption">San Juan</a>
+                      <a class="dropDownSearchSectionOption">San Luis</a>
+                      <a class="dropDownSearchSectionOption">Santa Cruz</a>
+                      <a class="dropDownSearchSectionOption">Santa Fe</a>
+                      <a class="dropDownSearchSectionOption">Santiago del Estero</a>
+                    </div>
+                  </div>
+                </button>
                 <button class="searchButton"></button>
               </div>
             </div>
