@@ -170,9 +170,6 @@
         width: 100%;
         margin-left: unset;
     }
-    .jobSectionDropDownNav{
-        display: block;
-    }
 }
 
 @media (max-width: 615px) {
